@@ -3,7 +3,7 @@
 #include "USART_RS232_H_file.h"		/* include USART library */
 #include <util/delay.h>
 #define  MTR_1 1
-#define  MTR_2 2				/* connected LED on PORT pin */
+#define  MTR_2 2				
 
 int main(void)
 {
@@ -18,14 +18,14 @@ int main(void)
 		if(Data_in == 'f')
 		{	PORTB = 0b00001010;
 			PORTC = 0b00001010;
-			USART_SendString("Forward\r\n");			/* Turn ON LED */
+			USART_SendString("Forward\r\n");			
 			
 		}
 		else if(Data_in =='b')
 		{
 		 PORTB = 0b01010101;
 		 PORTC= 0b01010101;
-		 USART_SendString("Backward\r\n");							/* Turn OFF LED */
+		 USART_SendString("Backward\r\n");							
 		} 
 		else if(Data_in == 'r'){
 			PORTB = 0b10100010;
