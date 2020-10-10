@@ -1,5 +1,5 @@
 
-#define F_CPU 1000000UL						/* Define CPU clock Frequency e.g. here its 8MHz */
+#define F_CPU 1000000UL						/* Define CPU clock Frequency*/
 #include <avr/io.h>							/* Include AVR std. library file */
 #define BAUD_PRESCALE (((F_CPU / (BAUDRATE * 8UL))) - 1)	/* Define prescale value */
 
